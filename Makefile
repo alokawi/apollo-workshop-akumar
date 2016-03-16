@@ -16,4 +16,4 @@ test:build
 
 .PHONY: deploy
 deploy: push
-	bin/apollo deploy -e production -m bikroy -t $(GIT_COMMIT) --bootstrap
+	bin/apollo deploy -e production -m bikroy -t $(GIT_COMMIT)
