@@ -3,5 +3,5 @@
 require 'sinatra'
 
 get '/' do
-	'Hello World from Apollo-Docker-Workshop'
+	"Hello World from Bikroy"
 end
