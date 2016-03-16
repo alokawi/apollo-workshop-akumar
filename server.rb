@@ -3,5 +3,5 @@
 require 'sinatra'
 
 get '/' do
-	"Hello World from Bikroy"
+	"Hello World from #{ENV['MARKET']}"
 end
