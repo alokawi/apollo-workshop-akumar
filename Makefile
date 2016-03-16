@@ -11,4 +11,4 @@ push: build
 
 .PHONY: deploy
 deploy: push
-	apollo deploy -e production -m ikman -t $(GIT_COMMIT)
+	apollo deploy -e production -m bikroy -t $(GIT_COMMIT)
