@@ -7,7 +7,7 @@ build: Dockerfile
 
 .PHONY: push
 push: build
-	docker tag $(IMAGE) $(IMAGE):$(GIT_COMMIT)
+	docker tag -f $(IMAGE) $(IMAGE):$(GIT_COMMIT)
 	docker push $(IMAGE):$(GIT_COMMIT) 
 
 .PHONY: test
