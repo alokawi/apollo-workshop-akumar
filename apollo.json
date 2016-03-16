@@ -1,6 +1,6 @@
 {
 	"name" : "apollo-workshop-akumar",
-	"image" : "tutum/hello-world",
+	"image" : "alokawi/apollo-workshop-akumar",
 	"containers" : {
 		"web" : {
 			"handoff": {
