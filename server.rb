@@ -1,5 +1,7 @@
+#!/usr/bin/env ruby
+
 require 'sinatra'
 
 get '/' do
-	"Hello World from Apollo-Docker-Workshop"
+	'Hello World from Apollo-Docker-Workshop'
 end
