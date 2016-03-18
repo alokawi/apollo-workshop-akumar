@@ -1,11 +1,11 @@
-FROM ruby:2.3
+FROM r-base:3.2.3 
 
 RUN mkdir -p /app
 
-RUN gem install sinatra
+COPY r-scripts/ad-moderation.R /app/
 
-COPY server.rb /app/server.rb
+COPY r-scripts/ad-moderation-configs.R /app/
 
-EXPOSE 80
+CMD [ "R", "-f", "/app/ad-moderation-configs.R" ]
 
-CMD [ "/app/server.rb", "-p", "80", "-o", "0.0.0.0" ]
+CMD [ "R", "-f", "/app/ad-moderation.R" ]
